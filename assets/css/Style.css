@@ -1,0 +1,347 @@
+*{
+    font-family: 'VT323', monospace;
+}
+  
+/* Navbar start */
+
+.navbar {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Adjust values as needed */
+}
+.nav-link{
+    font-size: 25px;
+}
+
+.navbar-transparent{
+  background-color: white;
+  border-bottom: none;
+}
+
+/* Navbar End */
+
+/* Banner start */
+
+
+#banner{
+padding-top: 200px;
+}
+
+#col2 img{
+  height: 100%;
+}
+
+.banner-title{
+  font-size: 48px;
+}
+
+.banner-p{
+  font-size: 18px;
+}
+
+/* Banner End */
+
+/* About start */
+#about{
+  padding-top: 100px;
+}
+.about-col-1 img{
+  /* width: 100%; */
+  height: 80%;
+}
+
+.shadow-image {
+  /* box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);  */
+  filter: drop-shadow(5px 10px 10px );
+}
+
+.sub-title {
+    font-size: 55px;
+    font-weight: 500;
+    color: black;
+  }
+
+.para1{
+    padding: 0 40px;
+    font-size: 22px;
+}
+
+.tab-links{
+    margin-right: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+}
+
+.tab-links::after {
+    content: "";
+    width: 0;
+    height: 3px;
+    /* background: red; */
+    background: rgb(243, 145, 18);
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+  }
+  
+  .tab-links.active-link::after {
+    width: 50%;
+  }
+
+  .tab-contents ul {
+    list-style: none;
+    padding-left: 0;
+    /* margin: 10px 0; */
+  }
+  
+  .tab-contents ul li span {
+    font-size: 18px;
+    /* color: rgb(243, 145, 18); */
+  }
+
+  .tab-contents {
+    display: none;
+  }
+  
+  .active-tab {
+    display: block;
+  }
+
+
+/* About end */
+
+/* ---------services------- */
+
+#services {
+  padding-top: 100px;
+}
+
+.services-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 20px;
+  margin-top: 50px;
+}
+
+.services-list div {
+  background: rgb(141, 140, 140);
+  padding: 10px 20px;
+  /* font-size: 13px; */
+  font-weight: 300;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* .services-list div i {
+  font-size: 50px;
+  margin-bottom: 30px;
+} */
+
+.services-list div h2 {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.services-list div p{
+  font-size: 20px;
+}
+/* .services-list div a {
+  text-decoration: none;
+  color: #fff;
+  margin-top: 20px;
+  display: inline-block;
+} */
+
+.services-list div:hover {
+  /* background: red; */
+  background:  rgb(141, 140, 140);
+  transform: translateY(-10px);
+  transition: background 0.5s, transform 0.5s;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.9);
+}
+
+/* -------------------end services------------ */
+
+/* portfolio start */
+
+#portfolio{
+  padding: 100px 0;
+}
+#Work{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.project {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Adjust values as needed */
+
+}
+
+.project img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.project h3 {
+  margin-top: 10px;
+  font-size: 30px;
+}
+
+.project p {
+  margin-top: 5px;
+  font-size: 20px;
+}
+
+.project a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+/* portfolio End */
+
+/* -------------------contact---------------  */
+/* contact left */
+
+#contact{
+  padding-top: 100px;
+  background-color: white;
+}
+
+.contact-left {
+  flex-basis: 35%;
+  border-right: 1px solid #262626 ;
+  /* padding-left: 20px; */
+  margin-right: 20px;
+}
+
+.contact-right {
+  flex-basis: 60%;
+}
+
+.contact-left p {
+  margin-top: 30px;
+}
+
+.contact-left p i {
+  color: #262626;
+  margin-right: 15px;
+  font-size: 25px;
+}
+
+.social-icons {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.social-icons a {
+  text-decoration: none;
+  color: #262626;
+  font-size: 25px;
+  margin-right: 15px;
+  display: inline-block;
+  transition: transform 0.5s;
+}
+
+.social-icons a:hover {
+  color: #262626;
+  transform: translateY(-5px);
+}
+
+.btn.btn2 {
+  display: inline-block;
+  background-color: #262626;
+  color: white;
+}
+
+.phone-no,.mail {
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+}
+
+
+/* contact right */
+
+.contact-right form {
+  width: 100%;
+}
+
+
+form input,
+form textarea {
+  width: 100%;
+  border: 0;
+  outline: none;
+  background-color:  rgb(141, 140, 140);
+  padding: 15px;
+  margin: 10px 0;
+  color: white;
+  font-size: 18px;
+  border-radius: 6px;
+}
+
+form .btn2 {
+  padding: 8px 40px;
+  font-size: 25px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.copyright {
+  width: 100%;
+  text-align: center;
+  padding: 5px 0;
+  background: #262626;
+  font-weight: 300;
+  margin-top: 20px;
+}
+.copyright p{
+  color: white;
+}
+.copyright i {
+  color: red;
+}
+
+#msg {
+  color: black;
+  margin-top: -20px;
+  display: block;
+}
+
+::placeholder {
+  color: black; /* Change this to the desired color */
+}
+
+/* ---------------- end contact ----------- */
+
+
+/* Responsive css For Mobile */
+
+@media (max-width:600px){
+
+.container,.container-fluid{
+    padding: 10px 10%;
+  }
+#banner{
+  padding-top: 80px;
+}
+
+.contact-left{
+    flex-basis: 100%;
+    border: none;
+  }
+
+  .contact-right{
+    flex-basis: 100%;
+  }
+}
